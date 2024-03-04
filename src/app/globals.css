@@ -1,33 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html{
+  height: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+  margin: 0%;
+}
+.Footer {
+  background-color: #1F1F1F;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.MainImage{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/jpg/mainbackground.jpg');
+  background-position: 0% 90%;
+  background-size: cover;
+}
+
+.TextPages {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 1280px;
+  background-image: url( '/svg/Tlo-Opona.svg' );
+  background-size: cover;
+  background-position: center;
+}
+
+.InfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HeaderQuestion{
+  font-family: var(--font-inter);
+}
+
+.HeaderAnswer {
+  font-family: var(--font-inter);
+  text-align: center;
+}
+
+.HeaderSubPages {
+  color: #00A0E3;
+  font-family: var(--font-michroma);
+}
+
+
+.SocialsTab {
+  display: block;
+  font-family: var(--font-michroma);
+  text-align: center;
+
+}
+.SocialsTab ul {
+  list-style: none;
+}
+.SocialsTab li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.InfoSection {
+  display: flex;
+
+}
+.ContentWrapper {
+  flex: 3; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.ImageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PhotoGallery {
+  display: flex;
+  justify-content: center;
+}
+
+.Napis {
+  font-family: var(--font-michroma);
 }
