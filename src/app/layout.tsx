@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { inter, michroma, swiperacedemo } from './fonts'
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+// import { inter, michroma, swiperacedemo } from './fonts'
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${michroma.variable} ${swiperacedemo.variable}`}>
+    <html lang="en">
       <body>
         <NavBar />
         {children}
