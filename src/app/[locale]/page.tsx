@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <div>
       <div className="MainImage border-b-2 border-blue-900">
-
       </div>
       <div className="SocialsTab my-10">
         <p className="mb-5">{t('sampletext')}</p>
@@ -39,7 +38,7 @@ export default function Home() {
           Nasze ostatnie realizacje
         </h2>
       </div>
-      <div className="PhotoGallery">
+      <div className="PhotoGallery flex justify-center">
         <div className="carousel w-1/2">
           <div id="slide1" className="carousel-item relative w-full">
             <img src="/jpg/FANTIC43.jpg" className="w-full" />
@@ -69,6 +68,13 @@ export default function Home() {
               <a href="#slide1" className="btn btn-circle">❯</a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center py-20">
+        <span className="mb-5">skontaktuj się z nami</span>
+        <div >
+          <a href="https://forms.gle/fYTJPyzC74X7ydUX9" className="btn btn-xs lg:btn-lg">Wyślij formularz</a>
         </div>
       </div>
     </div>

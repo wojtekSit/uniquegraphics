@@ -89,11 +89,6 @@ body {
   align-items: center;
 }
 
-.PhotoGallery {
-  display: flex;
-  justify-content: center;
-}
-
 .Napis {
   font-family: var(--font-michroma);
 }

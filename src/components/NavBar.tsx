@@ -1,11 +1,12 @@
 'use client'
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "../navigation";
 import LogoUnique from '../../public/svg/LogoUnique.svg'
+import LangSwitch from "./LanguageSwitcher";
 
 export default function Navbar() {
     return (
-        <div className="bg-gray-900 sticky top-0 left-0 z-30">
+        <div className="bg-black sticky top-0 left-0 z-30">
             <div className="flex justify-between items-center px-4 py-2 w-full lg:max-w-screen-lg lg:mx-auto">
                 <div className="dropdown lg:hidden">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -39,6 +40,8 @@ export default function Navbar() {
                     <a href="https://drive.google.com/drive/folders/1X_KE1MfTXSugQNiO3Hy71jtR0mPBp7MU">Katalog</a>
                     <div className="w-px h-6 bg-gray-600"></div>
                     <a href='tel:+48508570291'>+48 508 570 291</a>
+                    <div className="w-px h-6 bg-gray-600"></div>
+                    <LangSwitch />
                 </div>
             </div>
         </div>
