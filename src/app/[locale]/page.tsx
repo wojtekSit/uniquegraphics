@@ -1,16 +1,18 @@
 
 import { FaSquareInstagram, FaSquareFacebook, FaSquareWhatsapp, FaTiktok } from "react-icons/fa6";
-import InfoSectionImg from '../../public/svg/InfoSectionImg.svg'
+import InfoSectionImg from '../../../public/svg/InfoSectionImg.svg'
 import Image from 'next/image'
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations('Index')
   return (
     <div>
       <div className="MainImage border-b-2 border-blue-900">
 
       </div>
       <div className="SocialsTab my-10">
-        <p className="mb-5">Obserwuj nas na mediach społecznościowych</p>
+        <p className="mb-5">{t('sampletext')}</p>
         <ul>
           <li><FaSquareFacebook size={50} /></li>
           <li><FaSquareInstagram size={50} /></li>

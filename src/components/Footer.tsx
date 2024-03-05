@@ -1,14 +1,17 @@
-"use client";
+// "use client";
 import Link from 'next/link'
 import { FaSquareInstagram, FaSquareFacebook, FaSquareWhatsapp, FaTiktok } from "react-icons/fa6";
 import { CiMail, CiLocationOn, CiPhone } from "react-icons/ci";
+import { useTranslations } from 'next-intl';
 
 
 export default function Footer() {
+    const t = useTranslations('Index');
     return (
         <div className='bg-gray-900'>
             <footer className="footer p-10 bg-gray text-base-content">
                 <nav>
+                    {t('title')}
                     <h6 className="footer-title">Dane Kontaktowe</h6>
                     <div className='flex flex-col gap-3'>
                         <span className="flex items-center gap-3"><CiLocationOn size={25} />Większyce zamkowa 4</span>
